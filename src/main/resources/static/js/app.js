@@ -381,8 +381,8 @@ async function placeOrder() {
             payBtn.textContent = 'Pay Now';
         }
         
-        // Reset and generate QR if needed
-        selectPaymentMethod('CASH');
+        // Always default to UPI payment
+        selectPaymentMethod('STORE_QR');
     }
 }
 
